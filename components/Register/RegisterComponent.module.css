@@ -1,0 +1,73 @@
+.sectionRegister {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0rem 2rem 1rem 2rem;
+    box-shadow: 0px 0px 40px -5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 40px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 40px -5px rgba(0,0,0,0.75);
+}
+
+.sectionRegister h2 {
+    text-align: center;
+}
+
+.sectionRegisterForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.registerFormField {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.registerFormField label {
+    text-align: start;
+    font-size: .9rem;
+}
+
+.registerFormField input {
+    padding: .5rem;
+    border-radius: .5rem;
+    border: none;
+    background-color: #f3f3f3;
+    color: black;
+}
+
+.registerFormRegisterButton {
+    align-self: center;
+    background-color: #FFDE32;
+    border-radius: .5rem;
+    border: none;
+    padding: .7rem;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 80%;
+    margin-top: 1rem;
+    transition: 200ms;
+}
+
+.registerFormRegisterButton:hover {
+    transform: scale(1.05);
+}
+
+.sectionRegisterGoLogin {
+    margin-top: 1rem;
+    align-self: center;
+}
+
+.sectionRegisterGoLogin a {
+    text-decoration: none;
+    font-size: .8rem;
+    color: #777;
+}
+
+.sectionRegisterGoLogin a:hover {
+    color: #111;
+}

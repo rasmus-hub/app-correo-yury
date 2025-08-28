@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-content: center;
+    background-color: #333;
+    padding: 1rem;
+}
+
+.headerText {
+    font-size: 22px;
+    color: #FFDE32;
+}
