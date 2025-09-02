@@ -65,6 +65,11 @@
     transition: 200ms;
 }
 
+.loginFormLoginButton a {
+    text-decoration: none;
+    color: black;
+}
+
 .loginFormLoginButton:hover {
     transform: scale(1.05);
 }

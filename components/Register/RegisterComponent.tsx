@@ -21,7 +21,11 @@ const RegisterComponent : React.FC = () => {
                         <input type='password' placeholder='Ingresar contraseña'/>
                     </div>
 
-                    <button className={styles.registerFormRegisterButton}>Registrar cuenta</button>
+                    <button className={styles.registerFormRegisterButton}>
+                        <Link href={'/dashboard'}>
+                            Iniciar sesión
+                        </Link>
+                    </button>
                 </form>
 
                 <div className={styles.sectionRegisterGoLogin}>

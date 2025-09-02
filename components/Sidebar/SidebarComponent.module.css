@@ -1,0 +1,97 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 305px;
+    height: 100vh;
+    padding: 1rem;
+    background-color: #333;
+}
+
+.sidebarClosed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40px;
+    height: 100vh;
+    padding: 1rem;
+    background-color: #333;
+}
+
+.sidebarClosed .sidebarHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebarClosed .sidebarHeaderButton img {
+    transform: rotate(180deg);
+    width: 40px;
+    height: 40px;
+}
+
+.sidebarClosedItems {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebarLogo {
+    width: 50px;
+    height: 50px;
+}
+
+.sidebarClosedItems .sidebarItem {
+    gap: 0px;
+}
+
+.sidebarClosedItems .sidebarSeparator {
+    margin: 0rem;
+}
+
+.sidebarClosedItems .sidebarSeparator:first-child {
+    margin-top: 1.5rem;
+}
+
+.sidebarHeader {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-content: center;
+    align-items: center;
+}
+
+.sidebarHeader h2 {
+    font-size: 22px;
+    color: #FFDE32;
+}
+
+.sidebarHeaderButton {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.sidebarSearch {
+    width: 290px;
+    margin-top: 1.5rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: none;
+    background-color: #f3f3f3;
+    color: black;
+}
+
+.sidebarSeparator {
+    margin: 1rem 0rem 1.5rem 0rem;
+}
+
+.sidebarItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.sidebarItemText {
+    font-weight: 500;
+    color: #FFF;
+}

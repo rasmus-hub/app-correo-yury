@@ -23,7 +23,11 @@ const LoginComponent : React.FC = () => {
                         <label>Recordar datos</label>
                     </div>
 
-                    <button className={styles.loginFormLoginButton}>Iniciar sesión</button>
+                    <button className={styles.loginFormLoginButton}>
+                        <Link href={'/dashboard'}>
+                            Iniciar sesión
+                        </Link>
+                    </button>
                 </form>
 
                 <div className={styles.sectionLoginGoRegister}>

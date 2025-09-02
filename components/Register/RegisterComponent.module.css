@@ -53,6 +53,11 @@
     transition: 200ms;
 }
 
+.registerFormRegisterButton a {
+    text-decoration: none;
+    color: black;
+}
+
 .registerFormRegisterButton:hover {
     transform: scale(1.05);
 }
