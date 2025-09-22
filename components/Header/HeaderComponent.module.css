@@ -5,9 +5,52 @@
     align-items: center;
     background-color: #333;
     padding: 1rem;
+    box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
+}
+
+.headerDash {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 1rem;
+    box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.75);
 }
 
 .headerText {
     font-size: 22px;
     color: #FFDE32;
+}
+
+.headerProfile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.headerProfileInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.headerProfileInfoName {
+    margin: 0;
+    color: #fff;
+}
+
+.headerProfileInfoEmail {
+    margin: 0;
+    color: #888;
+}
+
+.headerProfileDropdown {
+    margin-left: 10px;
 }

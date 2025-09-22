@@ -6,7 +6,7 @@ import LoginComponent from '@/components/Login/LoginComponent';
 const Login : React.FC = () => {
   return (
     <div>
-        <HeaderComponent />
+        <HeaderComponent isDashboard={false} />
         <section className='section-login'>
           <LoginComponent />
         </section>

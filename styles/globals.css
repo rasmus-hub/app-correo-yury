@@ -13,3 +13,15 @@ body {
     align-items: center;
     height: 80vh;
 }
+
+.section-dashboard {
+    display: grid;
+    grid-template-columns: 1fr 30fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.sidebar-component {
+    z-index: 1;
+}

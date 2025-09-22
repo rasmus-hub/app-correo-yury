@@ -15,7 +15,11 @@ import chatIcon from '../../public/images/Sidebar/ChatIcon.png';
 import notificationIcon from '../../public/images/Sidebar/NotificationIcon.png';
 import settingsIcon from '../../public/images/Sidebar/settingsIcon.png';
 
-const SidebarComponent : React.FC = () => {
+interface SidebarProps {
+    onSelectItem: (item: string) => void;
+}
+
+const SidebarComponent : React.FC<SidebarProps> = ({ onSelectItem }) => {
 
     const [isOpen, setIsOpen] = useState(true)
 
@@ -31,6 +35,10 @@ const SidebarComponent : React.FC = () => {
         {id: 2, icon: settingsIcon, text: 'Configuración'}
     ]
 
+    const handleItemSelect = (item: string) => {
+        onSelectItem(item);
+    }
+
     return (
         <div>
             <section className={isOpen ? styles.sidebar : styles.sidebarClosed}>
@@ -44,20 +52,20 @@ const SidebarComponent : React.FC = () => {
                             </div>
                         </>
                     )}
-                    {!isOpen && <Image src={sidebarButton} alt='Boton sidebar' onClick={() => setIsOpen(!isOpen)} className={styles.sidebarHeaderButton}/>}
+                    {!isOpen && <Image src={sidebarButton} alt='Boton sidebar' onClick={() => setIsOpen(!isOpen)} className={styles.sidebarClosedButton}/>}
                 </header>
                 <div className={!isOpen ? styles.sidebarClosedItems : ''}>
                     {isOpen && <input type='text' placeholder='Buscar' className={styles.sidebarSearch}/>}
                     <hr className={styles.sidebarSeparator}/>
                     {firstSidebarItems.map((item) => (
-                        <div key={item.id} className={styles.sidebarItem}>
+                        <div key={item.id} className={styles.sidebarItem} onClick={() => handleItemSelect(item.text)}>
                             <Image src={item.icon} alt='Icono de buscar' className={styles.sidebarItemIcon} />
                             <h3 className={styles.sidebarItemText}>{isOpen && item.text}</h3>
                         </div>
                     ))}
                     <hr className={styles.sidebarSeparator}/>
                     {secondSidebarItems.map((item) => (
-                        <div key={item.id} className={styles.sidebarItem}>
+                        <div key={item.id} className={styles.sidebarItem} onClick={() => handleItemSelect(item.text)}>
                             <Image src={item.icon} alt='Icono de buscar' className={styles.sidebarItemIcon} />
                             <h3 className={styles.sidebarItemText}>{isOpen && item.text}</h3>
                         </div>

@@ -6,7 +6,7 @@ import RegisterComponent from '@/components/Register/RegisterComponent';
 const Register : React.FC = () => {
   return (
     <div>
-        <HeaderComponent />
+        <HeaderComponent isDashboard={false} />
         <section className='section-login'>
           <RegisterComponent />
         </section>
